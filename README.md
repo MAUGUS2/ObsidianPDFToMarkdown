@@ -22,6 +22,7 @@ src/
 │   └── main.py         # Script principal que executa o processamento dos PDFs.
 ├── .env                # Arquivo contendo variáveis de ambiente, como chaves de API.
 └── pyproject.toml      # Arquivo de configuração do Poetry para gerenciar dependências.
+```
 
 ## Pré-requisitos
 
