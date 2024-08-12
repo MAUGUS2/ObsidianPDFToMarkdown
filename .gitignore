@@ -1,3 +1,5 @@
 .env
 EXTRAS/
 db/
+src/markdowns/*
+src/pdfs/*
