@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "simplepdfreader"
+version = "0.1.0"
+description = ""
+authors = ["MAUGUS2 <mauoaugusto@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<=3.13"
+crewai = "^0.41.1"
+crewai-tools = "^0.4.26"
+langchain = "^0.2.12"
+openai = ">=1.13.3,<2.0.0"
+python-dotenv = ">=1.0.0,<2.0.0"
+pyyaml = "^6.0"
+
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
