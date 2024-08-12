@@ -10,21 +10,18 @@ O projeto inclui dois agentes principais:
 
 ## Estrutura do Projeto
 
-\`\`\`plaintext
-.
-├── src
-│   ├── pdfs               # Diretório onde os arquivos PDF são armazenados.
-│   ├── markdowns          # Diretório onde os arquivos Markdown gerados são salvos.
-│   ├── simplepdfreader    # Diretório contendo os módulos principais do projeto.
-│   │   ├── agents.py      # Criação dos agentes (Leitor e Revisor).
-│   │   ├── tasks.py       # Criação das tarefas atribuídas aos agentes.
-│   │   ├── tools.py       # Ferramentas utilizadas pelos agentes para processar PDFs.
-│   │   └── crew.py        # Configuração da equipe (crew) e orquestração das tarefas.
-│   └── main.py            # Script principal que executa o processamento dos PDFs.
-├── .env                   # Arquivo contendo variáveis de ambiente, como chaves de API.
-├── pyproject.toml         # Arquivo de configuração do Poetry para gerenciar dependências.
-└── README.md              # Instruções de uso do projeto.
-\`\`\`
+```plaintext
+src/
+├── pdfs/               # Diretório onde os arquivos PDF são armazenados.
+├── markdowns/          # Diretório onde os arquivos Markdown gerados são salvos.
+├── simplepdfreader/    # Diretório contendo os módulos principais do projeto.
+│   ├── agents.py       # Criação dos agentes (Leitor e Revisor).
+│   ├── tasks.py        # Criação das tarefas atribuídas aos agentes.
+│   ├── tools.py        # Ferramentas utilizadas pelos agentes para processar PDFs.
+│   ├── crew.py         # Configuração da equipe (crew) e orquestração das tarefas.
+│   └── main.py         # Script principal que executa o processamento dos PDFs.
+├── .env                # Arquivo contendo variáveis de ambiente, como chaves de API.
+└── pyproject.toml      # Arquivo de configuração do Poetry para gerenciar dependências.
 
 ## Pré-requisitos
 
