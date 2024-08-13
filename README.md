@@ -120,3 +120,6 @@ Antes de iniciar, você precisará ter as seguintes ferramentas instaladas no se
 ## Considerações Finais
 
 Este projeto é um exemplo de aplicação da framework CrewAI para automatizar o processamento e a formatação de conteúdo acadêmico extraído de PDFs. A modularidade do código permite fácil expansão para outros tipos de documentos ou formatos de saída.
+
+
+---
