@@ -49,13 +49,13 @@ Antes de iniciar, você precisará ter as seguintes ferramentas instaladas no se
 
 3. **Clonar o repositório e instalar as dependências**:
     \`\`\`bash
-    git clone <URL_DO_REPOSITORIO>
-    cd <NOME_DO_PROJETO>
+    git clone https://github.com/MAUGUS2/ObsidianPDFToMarkdown.git
+    cd ObsidianPDFToMarkdown
     poetry install
     \`\`\`
 
 4. **Configurar as variáveis de ambiente**:
-    - Crie um arquivo `.env` na raiz do projeto e adicione suas chaves de API, seguindo o modelo abaixo:
+    - No arquivo `.env` na raiz do projeto e adicione suas chaves de API, seguindo o modelo abaixo:
       \`\`\`env
       OPENAI_API_KEY=your_openai_api_key
       \`\`\`
@@ -71,13 +71,13 @@ Antes de iniciar, você precisará ter as seguintes ferramentas instaladas no se
 
 2. **Clonar o repositório e instalar as dependências**:
     \`\`\`bash
-    git clone <URL_DO_REPOSITORIO>
-    cd <NOME_DO_PROJETO>
+    git clone https://github.com/MAUGUS2/ObsidianPDFToMarkdown.git
+    cd ObsidianPDFToMarkdown
     poetry install
     \`\`\`
 
 3. **Configurar as variáveis de ambiente**:
-    - Crie um arquivo `.env` na raiz do projeto e adicione suas chaves de API, seguindo o modelo abaixo:
+    - No arquivo `.env` na raiz do projeto e adicione suas chaves de API, seguindo o modelo abaixo:
       \`\`\`env
       OPENAI_API_KEY=your_openai_api_key
       \`\`\`
@@ -95,8 +95,8 @@ Antes de iniciar, você precisará ter as seguintes ferramentas instaladas no se
 
 3. **Clonar o repositório e instalar as dependências**:
     \`\`\`bash
-    git clone <URL_DO_REPOSITORIO>
-    cd <NOME_DO_PROJETO>
+    git clone https://github.com/MAUGUS2/ObsidianPDFToMarkdown.git
+    cd ObsidianPDFToMarkdown
     poetry install
     \`\`\`
 
