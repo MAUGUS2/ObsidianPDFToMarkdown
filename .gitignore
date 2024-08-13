@@ -7,3 +7,4 @@ src/pdfs/*
 .DS_Store
 .python-version
 __pycache__/
+src/pdftomardown/__pycache__

@@ -1,0 +1,95 @@
+requests: |
+  1. Title and Introduction:
+     - Extract the full title of the document.
+     - Provide a detailed summary of the introduction that captures the main objective of the lesson and provides a clear overview of the content covered.
+
+  2. Lesson Content:
+     - List and describe in detail each theme present in the document.
+     - For each theme:
+       - Identify the main topics discussed and their respective subtopics.
+       - Describe the teaching methods used, such as practical examples and case studies.
+       - Ensure all content in the document (all themes, topics, and subtopics) is addressed.
+
+  3. Content Summary:
+     - Identify and extract all key concepts and definitions presented in the themes, topics, and subtopics.
+     - Provide a complete summary for each theme, topic, and subtopic, relating it to examples or practical applications where possible.
+
+  4. Techniques:
+     - Use proven study techniques to enhance retention and understanding of the content.
+     - Include techniques such as:
+       - Active learning
+       - Spaced repetition
+       - Interleaved practice
+       - Self-testing
+       - Concept mapping
+       - Dual coding
+       - Elaboration
+       - Distraction management
+       - Error review
+       - Deep work
+
+  5. Examples and Case Studies:
+     - Identify and summarize all practical examples and case studies in the document.
+     - Provide additional examples if necessary to enrich the content.
+
+  6. Conclusions and Relevance:
+     - Extract the final conclusions presented in the document.
+     - Ensure that all themes, topics, and subtopics are covered.
+     - Highlight important insights or findings relevant to enriching the summary.
+
+  7. Content Addition:
+     - Add themes, topics, subtopics, and additional information if necessary to enrich the content.
+
+  8. Additional Formatting:
+     - When necessary, slightly deviate from the defined template in `<template>` and use the Obsidian formatting tools listed in `<obsidianTools>` to enrich the content.
+
+  9. References and Recommended Readings:
+     - List all references cited in the document.
+     - Include any recommended readings for further understanding, with details such as authors, titles, and locations.
+
+constraints: |
+  1. Maintain Technical Terms in English:
+     - Do not translate widely recognized technical terms, such as "software engineering," "agile methodology," etc.
+
+  2. Names of Tools and Technologies:
+     - Do not translate the names of tools, technologies, frameworks, or programming languages, such as "Git," "Python," "Scrum."
+
+  3. Content Fidelity:
+     - Ensure the extracted content is faithful to the original document.
+     - Avoid interpretations or reformulations that might alter the original meaning.
+
+  4. Avoid Unknown Jargon:
+     - Focus on conveying the content clearly and accurately.
+
+  5. Structural Formatting:
+     - Maintain the hierarchical structure and formatting of the original document when describing topics and subtopics.
+     - Use the same style of title and numbering present in the PDF when applicable.
+
+  6. Names of Authors and References:
+     - Do not translate or alter the names of authors and bibliographical references.
+
+controls: |
+  1. Style and Tone:
+     - Use a formal and academic tone appropriate for higher education documents in Software Engineering.
+
+  2. Focus on Content:
+     - The extraction should be 100% focused on the document content.
+     - Add external information or personal opinions only if they are scientifically proven.
+
+  3. Language:
+     - Write in Brazilian Portuguese, using the formal standard of the language.
+     - Ensure the language is clear and objective, without ambiguities.
+
+  4. Sentiment and Neutrality:
+     - Maintain a neutral and scientific tone.
+     - Avoid adding unnecessary adjectives or superlatives.
+
+  5. Originality:
+     - Present the extracted information in an original way while maintaining the integrity of the content.
+
+  6. Level of Detail:
+     - Responses should be detailed but concise.
+     - Do not exceed what is necessary to convey the essential information and contextualize important concepts.
+
+  7. Verb Tense:
+     - Use the appropriate verb tense for the context, results, and case studies.
