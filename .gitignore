@@ -3,3 +3,7 @@ EXTRAS/
 db/
 src/markdowns/*
 src/pdfs/*
+.gitignore:
+.DS_Store
+.python-version
+__pycache__/
