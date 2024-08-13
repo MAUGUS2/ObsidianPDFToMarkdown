@@ -1,0 +1,121 @@
+obsidianTools: |
+  1. Basic Markdown:
+     - **Bold**: Use double asterisks to make text bold. Example: `**bold**`.
+     - *Italic*: Use single asterisks to italicize text. Example: `*italic*`.
+     - Unordered Lists: Create bullet points using a dash. Example: `- item`.
+     - Ordered Lists: Create numbered lists using numbers followed by a period. Example: `1. item`.
+     - Headings: Create headings using hash symbols. 
+       - Heading 1: `# Heading 1`
+       - Heading 2: `## Heading 2`
+
+  2. Tables:
+     - Create tables to organize data in a structured format.
+     - Example:
+       ```markdown
+       | Column 1 | Column 2 |
+       |----------|----------|
+       | Value 1  | Value 2  |
+       ```
+
+  3. Code Blocks:
+     - Use code blocks to display code or commands with syntax highlighting.
+     - Block Syntax: 
+       - Example:
+         ```markdown
+         ```python
+         def example():
+             pass
+         ```
+         ```
+     - Inline Code: Use backticks for inline code. Example: ``inline code``.
+
+  4. Quotes:
+     - Add quotes to highlight important text or citations.
+     - Example:
+       ```markdown
+       > This is a quote.
+       ```
+
+  5. Links and Images:
+     - Internal Links: Link to other notes within Obsidian. Example: `[[File Name]]`.
+     - External Links: Create hyperlinks to external websites. Example: `[Link Text](URL)`.
+     - Images: Embed images with alternative text. Example: `![Alt Text](Image_URL)`.
+
+  6. Tasks and Checklists:
+     - Create checklists for task management within your notes.
+     - Example:
+       ```markdown
+       - [ ] Task 1 (not completed)
+       - [x] Task 2 (completed)
+       ```
+
+  7. Footnotes and Attachments:
+     - Footnotes: Add additional information or citations at the bottom of the note.
+     - Example:
+       ```markdown
+       Text with footnote[^1].
+       
+       [^1]: This is the footnote.
+       ```
+     - Attachments: Attach files or documents for reference.
+
+  8. Quote Blocks and Dynamic Tables:
+     - Quote Blocks: Highlight blocks of text as quotations.
+     - Example:
+       ```markdown
+       > This is a blockquote.
+       ```
+     - Dynamic Tables: Use tables that can be dynamically updated or expanded.
+
+  9. Reference Links and Metadata:
+     - Reference Links: Create links that reference other parts of the document or external resources.
+     - Example:
+       ```markdown
+       [Link Text][reference-name]
+       
+       [reference-name]: URL or internal reference
+       ```
+     - YAML Metadata: Include metadata at the beginning of the note for organizational purposes.
+     - Example:
+       ```yaml
+       ---
+       tags: [example]
+       date: 2024-08-10
+       ---
+       ```
+
+  10. Charts and Diagrams:
+      - Use Mermaid syntax to create charts and diagrams within your notes.
+      - Example:
+        ```mermaid
+        graph TD
+            A --> B
+        ```
+
+  11. Expanded Code Blocks:
+      - Use nested code blocks to display detailed code examples or complex commands.
+      - Example:
+        ```markdown
+        # Title
+        - List item
+          ```python
+          print("Nested code block example")
+          ```
+        ```
+
+  12. Text Style:
+      - Highlighted Text: Use double equal signs to highlight text. Example: `==Highlighted Text==`.
+      - Subscript: Use tilde symbols for subscript. Example: `H~2~O`.
+      - Superscript: Use caret symbols for superscript. Example: `X^2^`.
+
+  13. Content Structure and Navigation:
+      - Organize content summaries and navigation within notes using appropriate Obsidian plugins or manual structuring.
+
+  14. Embedding Content:
+      - Embed other notes or files directly within a note.
+      - Example:
+        ```markdown
+        ![[file name]]
+        ```
+
+# This version is designed to be more explicit and detailed, making it easier for an AI agent or a user to understand and implement each tool within Obsidian.
