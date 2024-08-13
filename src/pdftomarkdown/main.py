@@ -1,8 +1,10 @@
-sys.path.append('/Users/maugus/Projects/MyCrews/PDFToMarkdown/src')
-print(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-
+# main.py
 import sys
 import os
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+print(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 import logging
 import yaml
 from jinja2 import Template
@@ -30,15 +32,15 @@ logger.info(f"Arquivos PDF encontrados: {pdf_files}")
 
 
 # Carregar o template a partir do arquivo .md
-with open('src/instructions/templates.md', 'r', encoding='utf-8') as template_file:
+with open('src/pdftomarkdown/instructions/templates.md', 'r', encoding='utf-8') as template_file:
     template = template_file.read()
 
 # Carregar o Obsidian Tools a partir do arquivo .yaml
-with open('src/instructions/ObsidianTolls.yaml', 'r', encoding='utf-8') as tools_file:
+with open('src/pdftomarkdown/instructions/Obsidiantolls.yaml', 'r', encoding='utf-8') as tools_file:
     obsidianTolls = yaml.safe_load(tools_file)['obsidianTools']
 
 # Carregar o arquivo instructions.yaml
-with open('src/instructions/instructions.yaml', 'r', encoding='utf-8') as instructions_file:
+with open('src/pdftomarkdown/instructions/instructions.yaml', 'r', encoding='utf-8') as instructions_file:
     instructions = yaml.safe_load(instructions_file)
 
 solicitacoes = instructions['requests']

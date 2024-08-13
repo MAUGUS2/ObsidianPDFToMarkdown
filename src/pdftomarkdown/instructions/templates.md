@@ -3,69 +3,107 @@
 
 ---
 
-## Themes
-{% for theme in themes %}
-### {{ theme.name }}
-{{ theme.description }}
+## Temas 
+{% for tema in temas %}
+## {{ tema.name }}
+{{ tema.description }}
 
-- **Topics:**
-  {% for topic in theme.topics %}
-  - **{{ topic.name }}**: {{ topic.description }}
+  - **Tópicos:**
+  {% for topico in tema.topics %}
+  - **{{ topico.name }}**: {{ topico.description }}
   {% endfor %}
 
-  {{ theme.content }}
+  {{ tema.content }}
   { Use the Obsidian formatting tools that best fit this theme to enhance visual content. }
 
-  {% for topic in theme.topics %}
-  #### {{ topic.name }}
-  {{ topic.description }}
+  {% for topico in tema.topics %}
+  ### {{ topico.name }}
+  {{ topico.description }}
 
-  - **Subtopics:**
-    {% for subtopic in topic.subtopics %}
-    - **{{ subtopic.name }}**: {{ subtopic.description }}
+    - **Subtópicos:**
+    {% for subtopico in topico.subtopics %}
+    - **{{ subtopico.name }}**: {{ subtopico.description }}
     {% endfor %}
 
-  {{ topic.content }}
-  { Use the Obsidian formatting tools that best fit this topic to enhance visual content. }
+    {{ topico.content }}
+    { Use the Obsidian formatting tools that best fit this topic to enhance visual content. }
 
-  {% for subtopic in topic.subtopics %}
-  ##### {{ subtopic.name }}
-  {{ subtopic.description }}
+    {% for subtopico in topico.subtopics %}
+    #### {{ subtopico.name }}
+    {{ subtopico.description }}
 
-  {{ subtopic.content }}
-  { Use the Obsidian formatting tools that best fit this subtopic to enhance visual content. }
+    {{ subtopico.content }}
+    { Use the Obsidian formatting tools that best fit this subtopic to enhance visual content. }
 
-  **Practical Examples:**
-  {{ subtopic.practical_examples }}
+    {% if subtopico.subsubtopics %}
+    **Sub-subtópicos:**
+    {% for subsubtopico in subtopico.subsubtopics %}
+    - **{{ subsubtopico.name }}**: {{ subsubtopico.description }}
+    {% endfor %}
+    
+    {% for subsubtopico in subtopico.subsubtopics %}
+    ##### {{ subsubtopico.name }}
+    {{ subsubtopico.description }}
 
-  > [!tip] **Tip:**
-  > {{ subtopic.tip }}
+    {{ subsubtopico.content }}
 
-  > [!info] **Notice:**
-  {{ subtopic.notice | default('No additional notice') }}
+    **Exemplos Práticos:**
+    {{ subsubtopico.practical_examples }}
 
-  **Applied Study Techniques:**
-  - **Active learning:** {{ subtopic.techniques.active_learning | default('Not applied') }}
-  - **Spaced repetition:** {{ subtopic.techniques.spaced_repetition | default('Not applied') }}
-  - **Interleaved practice:** {{ subtopic.techniques.interleaved_practice | default('Not applied') }}
-  - **Self-testing:** {{ subtopic.techniques.self_testing | default('Not applied') }}
-  - **Concept mapping:** {{ subtopic.techniques.concept_mapping | default('Not applied') }}
-  - **Dual coding:** {{ subtopic.techniques.dual_coding | default('Not applied') }}
-  - **Elaboration:** {{ subtopic.techniques.elaboration | default('Not applied') }}
-  - **Distraction management:** {{ subtopic.techniques.distraction_management | default('Not applied') }}
-  - **Error review:** {{ subtopic.techniques.error_review | default('Not applied') }}
-  - **Deep work:** {{ subtopic.techniques.deep_work | default('Not applied') }}
+    > [!tip] **Dica:**
+    > {{ subsubtopico.tip }}
+
+    > [!info] **Nota:**
+    {{ subsubtopico.notice | default('Nenhuma nota adicional') }}
+
+    **Técnicas de Estudo Aplicadas:**
+    - **Aprendizagem ativa:** {{ subsubtopico.techniques.active_learning | default('Não aplicado') }}
+    - **Repetição espaçada:** {{ subsubtopico.techniques.spaced_repetition | default('Não aplicado') }}
+    - **Prática intercalada:** {{ subsubtopico.techniques.interleaved_practice | default('Não aplicado') }}
+    - **Auto-teste:** {{ subsubtopico.techniques.self_testing | default('Não aplicado') }}
+    - **Mapeamento de conceitos:** {{ subsubtopico.techniques.concept_mapping | default('Não aplicado') }}
+    - **Codificação dual:** {{ subsubtopico.techniques.dual_coding | default('Não aplicado') }}
+    - **Elaboração:** {{ subsubtopico.techniques.elaboration | default('Não aplicado') }}
+    - **Gestão de distrações:** {{ subsubtopico.techniques.distraction_management | default('Não aplicado') }}
+    - **Revisão de erros:** {{ subsubtopico.techniques.error_review | default('Não aplicado') }}
+    - **Trabalho profundo:** {{ subsubtopico.techniques.deep_work | default('Não aplicado') }}
+
+    {% endfor %}
+    {% endif %}
+
+    **Exemplos Práticos:**
+    {{ subtopico.practical_examples }}
+
+    > [!tip] **Dica:**
+    > {{ subtopico.tip }}
+
+    > [!info] **Nota:**
+    {{ subtopico.notice | default('Nenhuma nota adicional') }}
+
+    **Técnicas de Estudo Aplicadas:**
+    - **Aprendizagem ativa:** {{ subtopico.techniques.active_learning | default('Não aplicado') }}
+    - **Repetição espaçada:** {{ subtopico.techniques.spaced_repetition | default('Não aplicado') }}
+    - **Prática intercalada:** {{ subtopico.techniques.interleaved_practice | default('Não aplicado') }}
+    - **Auto-teste:** {{ subtopico.techniques.self_testing | default('Não aplicado') }}
+    - **Mapeamento de conceitos:** {{ subtopico.techniques.concept_mapping | default('Não aplicado') }}
+    - **Codificação dual:** {{ subtopico.techniques.dual_coding | default('Não aplicado') }}
+    - **Elaboração:** {{ subtopico.techniques.elaboration | default('Não aplicado') }}
+    - **Gestão de distrações:** {{ subtopico.techniques.distraction_management | default('Não aplicado') }}
+    - **Revisão de erros:** {{ subtopico.techniques.error_review | default('Não aplicado') }}
+    - **Trabalho profundo:** {{ subtopico.techniques.deep_work | default('Não aplicado') }}
+
+    {% endfor %}
 
   {% endfor %}
-  {% endfor %}
+
 {% endfor %}
 
 ---
 
-## Lesson Conclusion
+## Conclusão da Aula
 {{ lesson_conclusion }}
 
 ---
 
-## References and Recommended Readings
+## Referências e Leituras Recomendadas
 {{ references_and_readings }}
